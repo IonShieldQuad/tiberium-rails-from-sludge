@@ -38,9 +38,9 @@ data:extend({
 })
 
 local tech = data.raw["technology"]["tiberium-sludge-processing"]
-table.insert(tech.effects, {
+table.insert(tech.effects, 
 	{
 		type = "unlock-recipe",
 		recipe = "tiberium-sludge-to-rails"
 	}
-})
+)
