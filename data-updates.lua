@@ -38,9 +38,28 @@ data:extend({
 })
 
 local tech = data.raw["technology"]["tiberium-sludge-processing"]
-table.insert(tech.effects, 
+table.insert(tech.effects,
 	{
 		type = "unlock-recipe",
 		recipe = "tiberium-sludge-to-rails"
 	}
 )
+
+
+local tech2 = data.raw["technology"]["fission-reactor-equipment"]
+local reactor_recipe = table.deepcopy(data.raw["recipe"]["fission-reactor-equipment"])
+reactor_recipe.name = "fission-reactor-equipment-from-tiberium"
+reactor_recipe.localised_name = { "equipment-name.fission-reactor-equipment" }
+for _, ingr in ipairs(reactor_recipe.ingredients) do
+	if ingr.name == "uranium-fuel-cell" then
+		ingr.name = "tiberium-fuel-cell"
+	end
+end
+
+---@diagnostic disable-next-line: assign-type-mismatch
+data:extend({ reactor_recipe })
+
+table.insert(tech2.effects, {
+	type = "unlock-recipe",
+	recipe = "fission-reactor-equipment-from-tiberium"
+})

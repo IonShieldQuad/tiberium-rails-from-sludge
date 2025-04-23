@@ -1,12 +1,12 @@
 {
 	"name": "tiberium-rails-from-sludge",
-	"title": "Tiberium - Rails with sludge recipe",
-	"description": "Adds a recipe to make rails using Tiberium sludge",
+	"title": "Tiberium - Extra recipes",
+	"description": "Adds some extra recipes to make things from Tiberium products",
 
 	"author": "MsBinaryLily",
 	"contact": "",
 
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"factorio_version": "2.0",
 	"dependencies": [
 		"base",
