@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025-05-07
+  Changes:
+    - Mod name change
+    - Changed Tiberium spike graphics to proper ones
+    - Added tiberium node tree animation
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2025-04-23
   Changes:
