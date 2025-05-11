@@ -328,4 +328,22 @@ if tree_version > 0 then
 			}
 		}
 	end
+	if tree_version == 3 then
+		node.stateless_visualisation = {
+			{
+				count = 1,
+				render_layer = "object",
+				animation = util.sprite_load("__tiberium-rails-from-sludge__/graphics/entity/TibTree-3/atlas",
+					{
+						priority = "extra-high",
+						animation_speed = 0.2,
+						run_mode = "forward",
+						frame_count = 11,
+						scale = 0.5,
+						frame_sequence = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, }
+						--shift = util.by_pixel( 0.5, -54.0)
+					})
+			}
+		}
+	end
 end
